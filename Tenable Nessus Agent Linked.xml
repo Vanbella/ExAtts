@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extensionAttribute>
+<displayName>Tenable Nessus Agent Linked</displayName>
+<description/>
+<dataType>string</dataType>
+<scriptContentsMac>#!/bin/sh&#13;
+&#13;
+link=`/Library/NessusAgent/run/sbin/nessuscli agent status|grep Linked|awk '{print $3}'`&#13;
+&#13;
+if [ $link == "Linked" ]; then&#13;
+#&#13;
+echo echo "&lt;result&gt;True&lt;/result&gt;"&#13;
+#&#13;
+else&#13;
+echo echo "&lt;result&gt;False&lt;/result&gt;"&#13;
+fi&#13;
+exit 0</scriptContentsMac>
+<scriptContentsWindows/>
+</extensionAttribute>
