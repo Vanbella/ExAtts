@@ -4,7 +4,6 @@
 #  govgsagit
 #  Check to see if the Adobe Remote Update Manager is installed.
 #  If the agent is installed, reports the version.
-
 #
 #  Created by AVB on 11/06/18.
 #
@@ -13,5 +12,5 @@ if [ -f "/usr/local/bin/RemoteUpdateManager" ] ; then
 else
     RESULT="not installed"
 fi
-
+#
 echo "<result>$RESULT</result>"
