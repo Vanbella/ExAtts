@@ -2,6 +2,9 @@
 
 #  gov.gsa.Adobe.Remoteupdatemanager.extattrib.sh
 #  govgsagit
+#  Check to see if the Adobe Remote Update Manager is installed.
+#  If the agent is installed, reports the version.
+
 #
 #  Created by AVB on 11/06/18.
 #
